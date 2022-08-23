@@ -1,8 +1,7 @@
 # サンプルコードの解説
 
-<pre>
-このドキュメントは<a href="https://github.com/CrossVR/hqx-shader/blob/53540f5f0d985c385dc108b41ab89980f2b214f4/sample/main.cpp">sample/main.cpp/</a>を日本語で解説したものです。
-</pre>
+>**Note**  
+> このドキュメントは [`hqx-shader/sample/main.cpp/`](https://github.com/CrossVR/hqx-shader/blob/53540f5f0d985c385dc108b41ab89980f2b214f4/sample/main.cpp) を日本語で解説したものです。
 
 ## ソースコード
 

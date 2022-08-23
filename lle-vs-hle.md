@@ -1,10 +1,7 @@
 # LLE vs HLE
 
-<pre>
-Note: 
-
-この記事は<a href="https://alexaltea.github.io/blog/posts/2018-04-18-lle-vs-hle/">LLE vs HLE and their tradeoffs</a>を翻訳したもので、主にエミュレータ開発者向けです。
-</pre>
+>**Note**  
+> この記事は [LLE vs HLE and their tradeoffs](https://alexaltea.github.io/blog/posts/2018-04-18-lle-vs-hle/) を翻訳したもので、主にエミュレータ開発者向けです。
 
 ## 前置き
 

@@ -6,7 +6,7 @@
 
 そのため、エミュレーションの際にも便利で、様々なエミュレータで対応することにより、もともと搭載されていないゲーム機のエミュレータにも適用することができます。
 
-![](../images/Nearest_Neighbor_2x_versus_HQ2x.png)
+![](./images/Nearest_Neighbor_2x_vs_HQ2x.png)
 
 ## テクスチャフィルタリング の種類
 

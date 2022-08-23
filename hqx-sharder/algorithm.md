@@ -1,8 +1,7 @@
 # HQxアルゴリズム
 
-<pre>
-このドキュメントは<a href="https://code.google.com/archive/p/hqx/wikis/ReadMe.wiki">hqxのREADMEのImplementation</a>を日本語に翻訳したものです。
-</pre>
+>**Note**  
+> このドキュメントは [hqxのREADMEのImplementation](https://code.google.com/archive/p/hqx/wikis/ReadMe.wiki) を日本語に翻訳したものです。
 
 最初のステップは、ソースピクセルの3x3エリアの分析です。まず、中心となるピクセルとその8つの近傍ピクセルとの色差を計算します。そして、その差を事前に設定した閾値と比較し、これらのピクセルを2つのカテゴリーに分類します。"近い色" と "遠い色" です。近傍は8つあるので、256通りの組み合わせが可能です。
 

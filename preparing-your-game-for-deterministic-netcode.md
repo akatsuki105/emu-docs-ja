@@ -1,11 +1,9 @@
 # 決定論的ネットコード
 
-<pre>
-Note: 
+>**Note**  
+> この記事は [Preparing your game for deterministic netcode](https://yal.cc/preparing-your-game-for-deterministic-netcode/) を翻訳したものです。
 
-この記事は<a href="https://yal.cc/preparing-your-game-for-deterministic-netcode/">Preparing your game for deterministic netcode</a>を翻訳したものです。
-</pre>
-
+>**Note**  
 > ネットコード: ネットプレイ(インターネットを使ったマルチプレイ)を実現するプログラム
 
 決定論的ネットコードとは、**各ゲームクライアントが、フレームごとに同じ初期状態と入力を与えられたときに、同じ状態になること**を意味します。

@@ -1,10 +1,7 @@
 # エミュレータの精度と速度について
 
-<pre>
-Note: 
-
-この記事は<a href="https://mgba.io/2017/04/30/emulation-accuracy/">Emulation Accuracy, Speed, and Optimization</a>を翻訳したもので、主にGBAエミュレータ開発者向けです。
-</pre>
+>**Note**  
+> この記事は [Emulation Accuracy, Speed, and Optimization](https://mgba.io/2017/04/30/emulation-accuracy/) を翻訳したもので、主にエミュレータ開発者向けです。
 
 ---
 

@@ -1,8 +1,7 @@
 # HQx-shader
 
-<pre>
-このドキュメントは<a href="https://github.com/CrossVR/hqx-shader/blob/53540f5f0d985c385dc108b41ab89980f2b214f4/README.md">HQx-shaderのREADME</a>を日本語に翻訳したものです。
-</pre>
+>**Note**  
+> このドキュメントは [HQx-shader](https://github.com/CrossVR/hqx-shader/blob/53540f5f0d985c385dc108b41ab89980f2b214f4/README.md) のREADMEを日本語に翻訳したものです。
 
 ドット絵を高画質化(アップスケール)するフィルターHQxをCgシェーダーを用いて実装したものです。
 
