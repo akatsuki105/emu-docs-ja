@@ -14,7 +14,7 @@
 
 ### コンソール
 
-- [GameBoy](https://github.com/pokemium/gb-docs-ja)
-- [GameBoyAdvance](https://github.com/pokemium/gba-docs-ja)
-- [Nintendo DS](https://github.com/pokemium/nds-docs-ja)
-- [Super Famicom](https://github.com/pokemium/snes-docs-ja)
+- [GameBoy](https://github.com/akatsuki105/gb-docs-ja)
+- [GameBoyAdvance](https://github.com/akatsuki105/gba-docs-ja)
+- [Nintendo DS](https://github.com/akatsuki105/nds-docs-ja)
+- [Super Famicom](https://github.com/akatsuki105/snes-docs-ja)
