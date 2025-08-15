@@ -58,8 +58,7 @@
 コードで表すと
 
 ```c++
-uint8 red = r << 5 | r << 2 | r >> 1
-//rrr00000 | 000rrr00 | 000000rr -> rrrrrrrr
+  uint8 red = (r << 5) | (r << 2 )| (r >> 1); // rrr00000 | 000rrr00 | 000000rr -> rrrrrrrr
 ```
 
 ## 画面のエミュレーション
@@ -105,13 +104,19 @@ static const uint8 gammaRamp[32] = {
 ただし、GBA用の色強度をそのままPCモニターに持ってくると、彩度が強すぎてしまいます。ありがたいことに、私たちはこれを補正して、むしろ自然な色を出すことができます。
 
 ```c++
-double lcdGamma = 4.0, outGamma = 2.2;
-double lb = pow(B / 31.0, lcdGamma);
-double lg = pow(G / 31.0, lcdGamma);
-double lr = pow(R / 31.0, lcdGamma);
-r = pow((  0 * lb +  50 * lg + 255 * lr) / 255, 1 / outGamma) * (0xffff * 255 / 280);
-g = pow(( 30 * lb + 230 * lg +  10 * lr) / 255, 1 / outGamma) * (0xffff * 255 / 280);
-b = pow((220 * lb +  10 * lg +  50 * lr) / 255, 1 / outGamma) * (0xffff * 255 / 280);
+  double lcdGamma = 4.0, outGamma = 2.2;
+
+  uint R = (rgb555 >>  0) & 0x1F;  // 0..31
+  uint G = (rgb555 >>  5) & 0x1F;  // 0..31
+  uint B = (rgb555 >> 10) & 0x1F;  // 0..31
+
+  double lr = pow(R / 31.0, lcdGamma);
+  double lg = pow(G / 31.0, lcdGamma);
+  double lb = pow(B / 31.0, lcdGamma);
+  
+  double correct_r = pow((  0 * lb +  50 * lg + 255 * lr) / 255, 1 / outGamma) * (255 / 280); // correct_r: 0 ~ 1
+  double correct_g = pow(( 30 * lb + 230 * lg +  10 * lr) / 255, 1 / outGamma) * (255 / 280); // correct_g: 0 ~ 1
+  double correct_b = pow((220 * lb +  10 * lg +  50 * lr) / 255, 1 / outGamma) * (255 / 280); // correct_b: 0 ~ 1
 ```
 
 このコードはTalarubi氏の提供によるものです。
